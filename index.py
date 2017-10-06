@@ -1,2 +1,1 @@
-def hello():
-	print("hello")
+=(COUNTIF(G2:K2, "X")+COUNTIF(N2:R2, "X")+COUNTIF(U2:Y2, "X") + COUNTIF(AB2:AF2, "X")/(20-(COUNTIF(G2:K2, "Not Available")+COUNTIF(N2:R2, "Not Available")+COUNTIF(U2:Y2, "Not Available") + COUNTIF(AB2:AF2, "Not Available"))))
