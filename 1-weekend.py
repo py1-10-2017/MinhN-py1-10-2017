@@ -1,6 +1,5 @@
 # 1. basic python
 # 	functions
-#	
 # 2. github 
 # 3. flask
 # 4. virtualenv

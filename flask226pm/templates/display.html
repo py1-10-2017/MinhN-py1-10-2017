@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+{% if session["current_state"] == "correct!"%}
+<h1>Yippee</h1>
+{% elif session["current_state"] == "to high" %}
+<h1>To high</h1>
+{% endif %}
+
+	<form action="/process" method="POST">
+		<input type="text" name="guess">
+		<input type="submit" name="">
+	</form>
+</body>
+</html>

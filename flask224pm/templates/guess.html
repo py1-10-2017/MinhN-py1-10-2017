@@ -1,0 +1,14 @@
+
+{% if session["current_answer"] == "low"%} -->
+<h1>To LOW</h1>
+{% elif session["current_answer"] == "high"%}
+<h1>To High</h1>
+
+{% endif %}
+{{session["current_answer"]}}
+
+<form action="/process" method="POST">
+		
+		<input type="text" name="guess">
+		<input type="submit" name="">
+	</form>
