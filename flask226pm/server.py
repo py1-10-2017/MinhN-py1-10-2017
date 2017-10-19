@@ -1,6 +1,17 @@
 from flask import Flask, render_template, session, redirect, request
+from myconnection import MySQLConnector
 app = Flask(__name__)
+mysql = MySQLConnector(app, 'mydb')
 app.secret_key = "asdjflasjdfla;sdf"
+
+# an example of running a query
+users = mysql.query_db("SELECT * FROM users")
+
+[
+	{"last_name":"Hart", "first_name":"Beth", "DOB":"2017-01-01"},
+	{"last_name":"Danny", "first_name":"Hua", "DOB":"2017-01-01"}
+]
+print users
 import random
 @app.route('/')
 def index():
