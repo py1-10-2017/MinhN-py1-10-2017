@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<table>
+		<thead>
+			<th>Id</th><th>Name</th>
+		</thead>
+		<tbody>
+			{% for user in all_users %}
+			<tr>
+				<td>{{user.id}}</td>
+				<td>{{user.name}}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+	<form action="/users" method="POST">
+		<input type="text" name="name_of_user">
+		<input type="submit" name="">
+	</form>
+	<a href="/friends">Go to Friendships</a>
+</body>
+</html>

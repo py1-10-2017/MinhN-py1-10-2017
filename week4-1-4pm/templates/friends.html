@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form action="/friends" method="POST">
+	<select name="user_id">
+		{% for user in all_users %}
+		<option value="{{user.id}}">{{user.name}}</option>
+		{% endfor %}
+	</select>
+
+
+	<select name="friend_id">
+		{% for user in all_users %}
+		<option value="{{user.id}}">{{user.name}}</option>
+		{% endfor %}
+	</select>
+	<input type="submit" name="">
+</form>
+</body>
+</html>
